@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout3"
+        android:layout_width="402dp"
+        android:layout_height="409dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:onClick="image"
+            android:id="@+id/imageView"
+            android:layout_width="125dp"
+            android:layout_height="132dp"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/m" />
+
+        <ImageView
+            android:onClick="image2"
+            android:id="@+id/imageView2"
+            android:layout_width="125dp"
+            android:layout_height="132dp"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/m" />
+
+        <ImageView
+            android:onClick="image3"
+            android:id="@+id/imageView3"
+            android:layout_width="125dp"
+            android:layout_height="132dp"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:srcCompat="@drawable/m" />
+
+        <ImageView
+            android:onClick="image4"
+            android:id="@+id/imageView4"
+            android:layout_width="125dp"
+            android:layout_height="132dp"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@drawable/m" />
+
+        <ImageView
+            android:onClick="image5"
+            android:id="@+id/imageView5"
+            android:layout_width="125dp"
+            android:layout_height="132dp"
+            app:layout_column="1"
+            app:layout_row="1"
+            app:srcCompat="@drawable/m" />
+
+        <ImageView
+            android:onClick="image6"
+            android:id="@+id/imageView6"
+            android:layout_width="125dp"
+            android:layout_height="132dp"
+            app:layout_column="2"
+            app:layout_row="1"
+            app:srcCompat="@drawable/m" />
+
+        <ImageView
+            android:onClick="image7"
+            android:id="@+id/imageView7"
+            android:layout_width="125dp"
+            android:layout_height="132dp"
+            app:layout_column="0"
+            app:layout_row="3"
+            app:srcCompat="@drawable/m" />
+
+        <ImageView
+            android:onClick="image8"
+            android:id="@+id/imageView8"
+            android:layout_width="125dp"
+            android:layout_height="132dp"
+            app:layout_column="1"
+            app:layout_row="3"
+            app:srcCompat="@drawable/m" />
+
+        <ImageView
+            android:onClick="image9"
+            android:id="@+id/imageView9"
+            android:layout_width="125dp"
+            android:layout_height="132dp"
+            app:layout_column="2"
+            app:layout_row="3"
+            app:srcCompat="@drawable/m" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/zaman"
+        android:layout_width="202dp"
+        android:layout_height="91dp"
+        android:text="Zaman: "
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/skor"
+        android:layout_width="143dp"
+        android:layout_height="71dp"
+        android:text="skor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout3" />
+</androidx.constraintlayout.widget.ConstraintLayout>
